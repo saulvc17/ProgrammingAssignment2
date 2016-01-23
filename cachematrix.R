@@ -17,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
        setSolve = setSolve,
        getSolve = getSolve)
 }
-##  The cacheSolve funtion
+##  The "cacheSolve" function checks whether the inverse was calculated and,
+##  whereas if not been calculated, the calculated. In both cases the result is displayed 
 cacheSolve <- function(x, ...) {
   m <- x$getSolve()
   if(!is.null(m)) {
